@@ -108,7 +108,14 @@ class _QuizScreenState extends State<QuizScreen> {
               return Center(
                 child: ElevatedButton(
                   onPressed: () => checkAnswer(option),
-                  child: Text(option),
+                  child: Text(option,style: TextStyle(color: Colors.black),),
+                  style: ElevatedButton.styleFrom(
+      backgroundColor: Colors.yellow[700], // Background color of the button
+       // Text color
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(8), // Rounded corners
+      ),
+    ),
                 ),
               );
             }).toList(),
